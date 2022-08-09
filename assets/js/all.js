@@ -1,7 +1,7 @@
+"use strict";
+
 console.log("Hello!");
-
-$(document).ready(() => {
-
+$(document).ready(function () {
   $(function () {
     $('.navbar-brand').each(function () {
       if ($(this).prop("href") == window.location.href) {
@@ -11,21 +11,18 @@ $(document).ready(() => {
       }
     });
   });
-
   $(".star").click(function () {
     $(this).toggleClass("font-yellow");
   });
-
   $(".notify").click(function () {
     $(this).toggleClass("font-yellow");
   });
-
   $(".expand-more").click(function () {
     $(".verify-more").slideToggle();
   });
-
   $("#send-mail").click(function () {
     $(this).hide();
     $("#sent").show();
   });
 });
+//# sourceMappingURL=all.js.map
