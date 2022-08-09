@@ -1,0 +1,46 @@
+.admin-main {
+  .admin-table {
+    margin-bottom: 63.5px;
+    .item-title {
+      border-bottom: 1px solid $normal;
+    }
+    .arrow {
+      font-size: 12px;
+      color: $highlight;
+      margin-right: 77px;
+    }
+    .name {
+      padding-right: 192px;
+    }
+    .email {
+      padding-right: 285px;
+    }
+    .verified {
+      padding-right: 120px;
+    }
+    .item {
+      td {
+        padding: 19px 0 17px;
+      }
+      .eye {
+        font-size: 22px;
+        margin-right: 25px;
+      }
+    }
+  }
+  .pagination {
+    .material-icons {
+      @include font-normal;
+      display: block;
+    }
+    .page-link {
+      color: $normal;
+      border: 1px solid $highlight;
+      &:hover, &:focus{
+          color: $light;
+          background: $highlight;
+          box-shadow: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,189 @@
+---
+title: Assignment Page
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="assignment-main container">
+  <div class="top-line mb-3 d-flex justify-content-between align-items-center">
+    <h1 class="title fw-bold">
+      Assignment
+      <span class="sub-title fw-bold"
+        >All Courses
+        <span class="material-icons expand-arrow"> expand_more </span>
+      </span>
+    </h1>
+    <div class="icons d-flex">
+      <a href="#" class="link">
+        <span class="material-icons search-icon"> search </span>
+      </a>
+      <span class="material-icons notify link"> notifications_active </span>
+    </div>
+  </div>
+  <div class="sec-line d-flex justify-content-between">
+    <h2 class="sec-title fw-bold">
+      All(4)
+      <span class="material-icons expand-arrow mb-1" id="index-expand">
+        expand_more
+      </span>
+    </h2>
+    <p class="comments txt">2 comments</p>
+  </div>
+  <div class="wrap content-wrap d-flex">
+    <ul class="nav-list mr-4" id="index-nav">
+      <li class="list-item border bg-main">
+        <div class="wrap d-flex justify-content-between">
+          <h3 class="thr-title mb-1">Chapter Assignment 2</h3>
+          <p class="time">4 hours ago</p>
+        </div>
+        <div class="wrap d-flex justify-content-between">
+          <p class="subject fw-bold">Please check this file...</p>
+          <p class="name txt">Emily Wang</p>
+        </div>
+      </li>
+      <li class="list-item border">
+        <div class="wrap d-flex justify-content-between">
+          <h3 class="thr-title mb-1">Chapter Assignment 1</h3>
+          <p class="time">12 hours ago</p>
+        </div>
+        <div class="wrap d-flex justify-content-between">
+          <p class="subject fw-bold">My Homework</p>
+          <p class="name txt">David Xu</p>
+        </div>
+      </li>
+      <li class="list-item border">
+        <div class="wrap d-flex justify-content-between">
+          <h3 class="thr-title mb-1">Final Assignment</h3>
+          <p class="time">18 hours ago</p>
+        </div>
+        <div class="wrap d-flex justify-content-between">
+          <p class="subject fw-bold">Have a problem with this...</p>
+          <p class="name txt">Tony Wei</p>
+        </div>
+      </li>
+      <li class="list-item border">
+        <div class="wrap d-flex justify-content-between">
+          <h3 class="thr-title mb-1">Final Assignment</h3>
+          <p class="time">19 hours ago</p>
+        </div>
+        <div class="wrap d-flex justify-content-between">
+          <p class="subject fw-bold">Do I do it right?</p>
+          <p class="name txt">Christina Lin</p>
+        </div>
+      </li>
+    </ul>
+    <div class="article">
+      <div
+        class="top-wrap bg-main border-bottom d-flex justify-content-between align-items-center border-top border-start border-end"
+      >
+        <div class="subject-container">
+          <h3 class="thr-title mb-1">Chapter Assignment 2 / HTML&CSS</h3>
+          <div class="subject fw-bold">
+            Please check this file for me, thanks!
+          </div>
+        </div>
+        <div class="more link">
+          <span class="material-icons"> more_vert </span>
+        </div>
+      </div>
+      <ul class="center-wrap border mb-4">
+        <li class="wrap-item">
+          <div class="account d-flex">
+            <div
+              class="person-img rounded-circle"
+              style="
+                background-image: url(./assets/images/emilywang.jpeg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 40px;
+                height: 40px;
+              "
+            ></div>
+            <div class="account-wrap">
+              <p class="name mb-1">Emily Wang</p>
+              <p class="txt mb-0">10:38 AM (4 hours ago)</p>
+            </div>
+          </div>
+          <div class="post border-bottom">
+            <p class="contxt mb-4">
+              Hi Teacher, the attached file is my homework of chapter 2. And
+              here comes a question: Why in the following code the height of the
+              <span class="bg-main icon-color font-roboto mr-1">div</span> is
+              bigger than the height of the
+              <span class="bg-main icon-color font-roboto mr-1">img</span> ?
+              There is a gap below the image, but it doesn’t seems to be a
+              padding/margin. What is the gap or extra space below image?
+            </p>
+            <div class="download mb-4 bg-main border link fw-bold">
+              <span class="material-icons"> attach_file </span>
+              HW-2-David.zip
+            </div>
+          </div>
+        </li>
+        <li class="wrap-item">
+          <div
+            class="wrap-top d-flex justify-content-between align-items-center"
+          >
+            <div class="account d-flex">
+              <div
+                class="person-img rounded-circle"
+                style="
+                  background-image: url(./assets/images/andychen.jpeg);
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-size: cover;
+                  width: 40px;
+                  height: 40px;
+                "
+              ></div>
+              <div class="account-wrap">
+                <p class="name mb-1">Andy Chen (You)</p>
+                <p class="txt mb-0">13:24 AM (1 hours ago)</p>
+              </div>
+            </div>
+            <div class="icons d-flex">
+              <span class="material-icons link star mr-6">
+                star_border_purple500
+              </span>
+
+              <a href="#" class="link">
+                <span class="material-icons"> create </span>
+              </a>
+            </div>
+          </div>
+          <div class="post pb-22">
+            Hi David, by default, an image is rendered inline, like a letter so
+            it sits on the same line that a, b, c and d sit on. There is space
+            below that line for the descenders you find on letters like g, j, p
+            and q.<br /><br />
+            You can: <br /><br />• adjust the
+            <span class="bg-main icon-color font-roboto mr-1">vertical-align</span>
+            of the image to position it elsewhere (e.g. the
+            <span class="bg-main icon-color font-roboto mr-1">middle</span> ) or
+            <br />• change the
+            <span class="bg-main icon-color font-roboto mr-1">display</span> so it
+            isn’t inline.
+          </div>
+        </li>
+      </ul>
+      <div class="bottom-wrap d-flex justify-content-between">
+        <div class="icons d-flex">
+          <a href="#" class="link mr-6">
+            <span class="material-icons arrow"> arrow_back_ios </span>
+          </a>
+          <a href="#" class="link">
+            <span class="material-icons arrow"> arrow_forward_ios </span>
+          </a>
+        </div>
+        <div class="buttons d-flex">
+          <button type="button" class="btn btn-outline-success mr-4 fw-bold">
+            Mark as read
+          </button>
+          <button type="button" class="btn btn-success fw-bold">Reply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

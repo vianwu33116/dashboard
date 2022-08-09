@@ -1,0 +1,165 @@
+---
+title: Admin Page
+layout: ./app/layout.ejs
+engine: ejs
+current: admin
+---
+
+<div class="admin-main container">
+  <div class="top-line mb-4 d-flex justify-content-between align-items-center">
+    <h1 class="title fw-bold d-flex">
+      Admin
+      <div class="link" data-bs-toggle="modal" data-bs-target="#newModal">
+        <span class="sub-title fw-bold">
+          <span class="material-icons icon-color"> add </span>Add New Admin
+        </span>
+      </div>
+    </h1>
+    <div class="icons d-flex">
+      <a href="./editAdmin.ejs" class="link">
+        <span class="material-icons search-icon"> search </span>
+      </a>
+      <span class="material-icons notify link"> notifications_active </span>
+    </div>
+  </div>
+  <table class="admin-table">
+    <tr class="item-title">
+      <td class="fw-bold">
+        ID
+        <span class="material-icons arrow fw-bold"> arrow_downward </span>
+      </td>
+      <td class="name fw-bold">Name</td>
+      <td class="email fw-bold">Email</td>
+      <td class="verified fw-bold">Verified</td>
+    </tr>
+    <tr class="item border-bottom">
+      <td>#1</td>
+      <td>Emir Wicks</td>
+      <td>emir.wick@mail.com</td>
+      <td>Yes</td>
+      <td>
+        <span
+          class="material-icons eye"
+          data-bs-toggle="modal"
+          data-bs-target="#viewModal"
+        >
+          visibility
+        </span>
+        <span
+          class="material-icons edit"
+          data-bs-toggle="modal"
+          data-bs-target="#editModal"
+        >
+          edit
+        </span>
+      </td>
+    </tr>
+    <tr class="item border-bottom">
+      <td>#2</td>
+      <td>Zaina Goldsmith</td>
+      <td>zaina.goldsmith@mail.com</td>
+      <td>Yes</td>
+      <td>
+        <span class="material-icons eye"> visibility </span>
+        <span class="material-icons edit"> edit </span>
+      </td>
+    </tr>
+    <tr class="item border-bottom">
+      <td>#3</td>
+      <td>Mahima Lopez</td>
+      <td>mahima.lopez@mail.com</td>
+      <td>Yes</td>
+      <td>
+        <span class="material-icons eye"> visibility </span>
+        <span class="material-icons edit"> edit </span>
+      </td>
+    </tr>
+    <tr class="item border-bottom">
+      <td>#4</td>
+      <td>Pharrell Murray</td>
+      <td>pharrell.murray@mail.com</td>
+      <td>Yes</td>
+      <td>
+        <span class="material-icons eye"> visibility </span>
+        <span class="material-icons edit"> edit </span>
+      </td>
+    </tr>
+    <tr class="item border-bottom">
+      <td>#5</td>
+      <td>Annika Mcbride</td>
+      <td>annika.mcbride@mail.com</td>
+      <td>Yes</td>
+      <td>
+        <span class="material-icons eye"> visibility </span>
+        <span class="material-icons edit"> edit </span>
+      </td>
+    </tr>
+    <tr class="item border-bottom">
+      <td>#6</td>
+      <td>Fatimah Clark</td>
+      <td>fatimah.clark@mail.com</td>
+      <td>Yes</td>
+      <td>
+        <span class="material-icons eye"> visibility </span>
+        <span class="material-icons edit"> edit </span>
+      </td>
+    </tr>
+    <tr class="item border-bottom">
+      <td>#7</td>
+      <td>Klaudia Rhodes</td>
+      <td>klaudia.rhodes@mail.com</td>
+      <td>Yes</td>
+      <td>
+        <span class="material-icons eye"> visibility </span>
+        <span class="material-icons edit"> edit </span>
+      </td>
+    </tr>
+    <tr class="item border-bottom">
+      <td>#8</td>
+      <td>Tillie Lucero</td>
+      <td>tillie.lucero@mail.com</td>
+      <td>Yes</td>
+      <td>
+        <span class="material-icons eye"> visibility </span>
+        <span class="material-icons edit"> edit </span>
+      </td>
+    </tr>
+    <tr class="item border-bottom">
+      <td>#9</td>
+      <td>Sabrina Stephenson</td>
+      <td>sabrina.stephenson@mail.com</td>
+      <td>Yes</td>
+      <td>
+        <span class="material-icons eye"> visibility </span>
+        <span class="material-icons edit"> edit </span>
+      </td>
+    </tr>
+    <tr class="item border-bottom">
+      <td>#10</td>
+      <td>Annie Smith</td>
+      <td>annie.smith@mail.com</td>
+      <td>Yes</td>
+      <td>
+        <span class="material-icons eye"> visibility </span>
+        <span class="material-icons edit"> edit </span>
+      </td>
+    </tr>
+  </table>
+  <nav aria-label="Page navigation">
+    <ul class="pagination d-flex justify-content-end mb-8">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span class="material-icons"> navigate_before </span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span class="material-icons"> navigate_next </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>

@@ -1,0 +1,71 @@
+.modal-dialog {
+  max-width: 480px;
+  .modal-content {
+    padding: 32px;
+  }
+  .view-modal-wrap {
+    width: 68%;
+  }
+  .modal-header {
+    padding: 0;
+    border: none;
+  }
+  .modal-body {
+    padding: 0;
+    .name {
+      @include font-larger;
+    }
+    .email {
+      margin-bottom: 20px;
+    }
+    .verified {
+      padding: 4px 8px;
+    }
+    .deactivate {
+      margin-right: 15px;
+      background: $light;
+      color: $danger;
+      &:hover{
+        background: $danger;
+        color: $light;
+        cursor: pointer;
+      }
+    }
+    .edit {
+      background: $highlight;
+      border-color: $highlight;
+    }
+    .verify-more {
+      display: none;
+    }
+  }
+  .btn {
+    padding: 8px 32px;
+    @include font-normal;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  .edit-modal-title {
+    @include font-larger;
+  }
+  .form {
+    margin-bottom: 48px;
+    .thr-title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .txt-input {
+      width: 100%;
+    }
+    .send-mail {
+      color: $border;
+    }
+    .sent{
+      display: none;
+    }
+  }
+  .alert {
+    padding: 0;
+  }
+}

@@ -1,0 +1,56 @@
+.assignment-main {
+  .expand-arrow {
+    color: $highlight;
+  }
+  .sec-line {
+    .comments {
+      @include font-sm;
+    }
+  }
+  .nav-list {
+    width: 32.5%;
+    @include font-sm;
+    cursor: pointer;
+    .list-item {
+      padding: 12px;
+      &:hover {
+        background: $main;
+      }
+    }
+  }
+  .thr-title {
+    @include font-sm;
+  }
+  .subject {
+    @include font-normal;
+  }
+  .article {
+    width: 67.5%;
+    margin-bottom: 32px;
+    .top-wrap {
+      padding: 12px 16px;
+    }
+    .center-wrap {
+      padding-right: 32px;
+      .post {
+        margin-left: 64px;
+        font-size: 14px;
+        line-height: 21px;
+      }
+      .download {
+        width: 176px;
+        padding: 12px;
+        padding-right: 16px;
+        @include font-normal;
+      }
+    }
+    .bottom-wrap{
+        .btn{
+            padding: 8px 32px;
+        }
+    }
+  }
+  .account {
+    margin: 16px;
+  }
+}

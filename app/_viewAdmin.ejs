@@ -1,0 +1,54 @@
+<body class="d-flex">
+  <header></header>
+  <div
+    class="modal fade"
+    id="viewModal"
+    tabindex="-1"
+    aria-labelledby="viewModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content d-flex flex-row">
+        <div class="person-img mr-6">
+          <img
+            src="./assets/images/emir.jpeg"
+            alt="person"
+            style="width: 141px; height: 141px"
+          />
+        </div>
+        <div class="view-modal-wrap">
+          <div class="modal-header">
+            <h2 class="modal-title mb-2 view-modal-title" id="viewModalLabel">
+              #1
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h3 class="thr-title">Admin</h3>
+            <h4 class="name mb-2 fw-bold">Emir Wicks</h4>
+            <p class="email txt">emir.wicks@mail.com</p>
+            <div class="verified-wrap d-flex justify-content-between mb-9">
+              <p class="verified bg-main font-sz14">Verified</p>
+              <span class="material-icons icon-color expand-more">
+                expand_more
+              </span>
+            </div>
+            <div class="verify-more">
+              <button type="button" class="btn deactivate btn-danger fw-bold">
+                Deactivate
+              </button>
+              <button type="button" class="btn edit btn-success fw-bold">
+                Edit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
